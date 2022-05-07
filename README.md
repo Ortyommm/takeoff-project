@@ -1,5 +1,7 @@
 # Takeoff test
 Видео обзор: https://youtu.be/t9Nn8pXT5Qg
+<br>
+Версия Node.js = 14.18.2
 
 ### Запуск:
 
