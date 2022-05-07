@@ -1,7 +1,5 @@
-import { Form, Input } from "antd";
-import React, { FormEvent } from "react";
+import React from "react";
 import InputFormItem from "./InputFormItem";
-import { isEmail } from "../../helpers/validators";
 
 export default function PasswordFormItem({
   password,

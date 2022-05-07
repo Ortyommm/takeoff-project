@@ -7,7 +7,7 @@ const initialState: { isSignedIn: boolean; contact: IContact | null } = {
   contact: null,
 };
 
-export default (state = initialState, action: Action) => {
+const authReducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case ActionsEnum.SIGN_IN:
       return { ...state, isSignedIn: true };
@@ -17,3 +17,5 @@ export default (state = initialState, action: Action) => {
       return state;
   }
 };
+
+export default authReducer;

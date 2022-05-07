@@ -1,6 +1,5 @@
 import { Form, Input } from "antd";
-import { isEmail } from "../../helpers/validators";
-import React, { FormEvent, useEffect, useState } from "react";
+import React, { FormEvent } from "react";
 
 export default function InputFormItem({
   value,

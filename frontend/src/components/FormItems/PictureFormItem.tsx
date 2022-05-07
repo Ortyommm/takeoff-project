@@ -1,6 +1,5 @@
-import React, { FormEvent } from "react";
-import { Form, Input } from "antd";
-import { isEmail, isUrl } from "../../helpers/validators";
+import React from "react";
+import { isUrl } from "../../helpers/validators";
 import InputFormItem from "./InputFormItem";
 
 export default function PictureFormItem({

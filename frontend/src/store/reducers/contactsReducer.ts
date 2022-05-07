@@ -5,7 +5,7 @@ const initialState: { data: IContact[] } = {
   data: [],
 };
 
-export default (
+const contactsReducer = (
   state = initialState,
   action:
     | { type: ActionsEnum.SET_CONTACTS; payload: IContact[] }
@@ -37,3 +37,5 @@ export default (
       return state;
   }
 };
+
+export default contactsReducer;

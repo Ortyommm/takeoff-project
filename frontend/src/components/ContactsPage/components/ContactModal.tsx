@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Input, Modal, Form } from "antd";
+import { Form, Modal } from "antd";
 import EmailFormItem from "../../FormItems/EmailFormItem";
 import PasswordFormItem from "../../FormItems/PasswordFormItem";
 import NameFormItem from "../../FormItems/NameFormItem";
@@ -23,14 +23,13 @@ export default function ContactModal({
 }) {
   const { addContact, editContact } = useContactsDispatch();
   const [form] = Form.useForm();
-  console.log({ editingContact });
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [pictureLink, setPictureLink] = useState("");
 
   function cleanData() {
-    console.log("cleaned");
     setEmail("");
     setPassword("");
     setName("");
@@ -47,7 +46,6 @@ export default function ContactModal({
     setPassword(password);
     setName(name);
     setPictureLink(picture);
-    console.log({ email });
     // ui
     form.setFields([
       { name: "email", value: email },

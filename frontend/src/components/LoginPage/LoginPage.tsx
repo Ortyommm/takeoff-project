@@ -1,17 +1,17 @@
 import style from "./LoginPage.module.scss";
-import { Alert, Button, Divider, Form, Input, Space } from "antd";
+import { Alert, Button, Form, Typography } from "antd";
 import { EnterOutlined } from "@ant-design/icons";
-import { Typography } from "antd";
 import api from "../../api";
 import { IError, ILoginResponse } from "../../types";
 import { AxiosResponse } from "axios";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { isEmail } from "../../helpers/validators";
 import ActionsEnum from "../../store/actions/types";
 import { Navigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store";
 import EmailFormItem from "../FormItems/EmailFormItem";
 import PasswordFormItem from "../FormItems/PasswordFormItem";
+
 const { Title } = Typography;
 
 export default function LoginPage() {

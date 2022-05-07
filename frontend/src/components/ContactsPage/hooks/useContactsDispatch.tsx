@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import { IContact } from "../../../types";
 import ActionsEnum from "../../../store/actions/types";
 import { useAppDispatch } from "../../../store";
