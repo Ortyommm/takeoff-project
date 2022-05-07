@@ -1,0 +1,21 @@
+.login_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 500px;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .title {
+    margin-bottom: 40px;
+    align-self: center;
+  }
+}
+
+.error {
+  margin-bottom: 20px !important;
+  width: 100%;
+  transition: opacity 0.1s;
+  height: 30px;
+}
